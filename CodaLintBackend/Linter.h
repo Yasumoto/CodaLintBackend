@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) NSString *filePath;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) LintParser *parser;
+@property (nonatomic, strong) id<LintParser> parser;
 @property (nonatomic, strong) NSString *linterPath;
 @property (nonatomic, strong) NSArray *linterArguments;
 @property (nonatomic, strong) NSString *linterCwd; // This is used to set which directory to run the linter

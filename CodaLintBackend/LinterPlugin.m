@@ -43,6 +43,12 @@
                                  userInfo:nil];
 }
 
+- (NSArray *) parseLintErrors:(NSString *) output {
+    @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
+                                 userInfo:nil];
+}
+
 - (NSString *) temporaryFileWithContents:(NSString *)contents {
     // Props to http://www.cocoawithlove.com/2009/07/temporary-files-and-folders-in-cocoa.html
     NSString *tempFileTemplate = [NSTemporaryDirectory() stringByAppendingPathComponent:@"codalintbackend.XXXXXX"];
@@ -83,6 +89,7 @@
     validator.linterPath = self.linterPath;
     validator.linterArguments = self.linterArguments;
     validator.delegate = aDelegate;
+    validator.parser = self;
     
     validator.filePath = [self temporaryFileWithContents:text];
     return validator;

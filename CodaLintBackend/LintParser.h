@@ -9,7 +9,7 @@
 #ifndef LintParser_h
 #define LintParser_h
 
-@interface LintParser : NSObject
+@protocol LintParser
 
 - (NSArray *) parseLintErrors:(NSString *) output;
 
