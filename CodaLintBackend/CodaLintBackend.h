@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <CodaLintBackend/LinterPlugin.h>
+#import <CodaLintBackend/LintParser.h>
 
 //! Project version number for CodaLintBackend.
 FOUNDATION_EXPORT double CodaLintBackendVersionNumber;

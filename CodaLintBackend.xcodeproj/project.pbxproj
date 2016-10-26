@@ -10,6 +10,14 @@
 		A164CDDB1DC15B7A00FFA842 /* CodaLintBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A164CDD11DC15B7A00FFA842 /* CodaLintBackend.framework */; };
 		A164CDE01DC15B7A00FFA842 /* CodaLintBackendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A164CDDF1DC15B7A00FFA842 /* CodaLintBackendTests.m */; };
 		A164CDE21DC15B7A00FFA842 /* CodaLintBackend.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDD41DC15B7A00FFA842 /* CodaLintBackend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A164CDF31DC15BC700FFA842 /* CodaPluginsController.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEB1DC15BC700FFA842 /* CodaPluginsController.h */; };
+		A164CDF41DC15BC700FFA842 /* LinterPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEC1DC15BC700FFA842 /* LinterPlugin.h */; };
+		A164CDF51DC15BC700FFA842 /* LinterPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A164CDED1DC15BC700FFA842 /* LinterPlugin.m */; };
+		A164CDF61DC15BC700FFA842 /* LintParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEE1DC15BC700FFA842 /* LintParser.h */; };
+		A164CDF71DC15BC700FFA842 /* Linter.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEF1DC15BC700FFA842 /* Linter.h */; };
+		A164CDF81DC15BC700FFA842 /* Linter.m in Sources */ = {isa = PBXBuildFile; fileRef = A164CDF01DC15BC700FFA842 /* Linter.m */; };
+		A164CDF91DC15BC700FFA842 /* Runner.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDF11DC15BC700FFA842 /* Runner.h */; };
+		A164CDFA1DC15BC700FFA842 /* Runner.m in Sources */ = {isa = PBXBuildFile; fileRef = A164CDF21DC15BC700FFA842 /* Runner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		A164CDDA1DC15B7A00FFA842 /* CodaLintBackendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodaLintBackendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A164CDDF1DC15B7A00FFA842 /* CodaLintBackendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodaLintBackendTests.m; sourceTree = "<group>"; };
 		A164CDE11DC15B7A00FFA842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A164CDEB1DC15BC700FFA842 /* CodaPluginsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaPluginsController.h; sourceTree = "<group>"; };
+		A164CDEC1DC15BC700FFA842 /* LinterPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinterPlugin.h; sourceTree = "<group>"; };
+		A164CDED1DC15BC700FFA842 /* LinterPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinterPlugin.m; sourceTree = "<group>"; };
+		A164CDEE1DC15BC700FFA842 /* LintParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LintParser.h; sourceTree = "<group>"; };
+		A164CDEF1DC15BC700FFA842 /* Linter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Linter.h; sourceTree = "<group>"; };
+		A164CDF01DC15BC700FFA842 /* Linter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Linter.m; sourceTree = "<group>"; };
+		A164CDF11DC15BC700FFA842 /* Runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runner.h; sourceTree = "<group>"; };
+		A164CDF21DC15BC700FFA842 /* Runner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,14 @@
 			children = (
 				A164CDD41DC15B7A00FFA842 /* CodaLintBackend.h */,
 				A164CDD51DC15B7A00FFA842 /* Info.plist */,
+				A164CDEB1DC15BC700FFA842 /* CodaPluginsController.h */,
+				A164CDEC1DC15BC700FFA842 /* LinterPlugin.h */,
+				A164CDED1DC15BC700FFA842 /* LinterPlugin.m */,
+				A164CDEE1DC15BC700FFA842 /* LintParser.h */,
+				A164CDEF1DC15BC700FFA842 /* Linter.h */,
+				A164CDF01DC15BC700FFA842 /* Linter.m */,
+				A164CDF11DC15BC700FFA842 /* Runner.h */,
+				A164CDF21DC15BC700FFA842 /* Runner.m */,
 			);
 			path = CodaLintBackend;
 			sourceTree = "<group>";
@@ -93,7 +117,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A164CDF91DC15BC700FFA842 /* Runner.h in Headers */,
+				A164CDF31DC15BC700FFA842 /* CodaPluginsController.h in Headers */,
+				A164CDF41DC15BC700FFA842 /* LinterPlugin.h in Headers */,
+				A164CDF61DC15BC700FFA842 /* LintParser.h in Headers */,
 				A164CDE21DC15B7A00FFA842 /* CodaLintBackend.h in Headers */,
+				A164CDF71DC15BC700FFA842 /* Linter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A164CDF51DC15BC700FFA842 /* LinterPlugin.m in Sources */,
+				A164CDFA1DC15BC700FFA842 /* Runner.m in Sources */,
+				A164CDF81DC15BC700FFA842 /* Linter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
