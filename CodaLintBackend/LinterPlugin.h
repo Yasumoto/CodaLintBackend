@@ -6,8 +6,8 @@
 //  Copyright © 2016 Joe Smith. All rights reserved.
 //
 
-#import "CodaPlugInsController.h"
-#import "LintParser.h"
+#import <CodaLintBackend/CodaPlugInsController.h>
+#import <CodaLintBackend/LintParser.h>
 
 @interface LinterPlugin : NSObject <CodaValidatorPlugIn>
 
