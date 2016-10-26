@@ -18,9 +18,6 @@
 
 @implementation LinterPlugin
 
-@synthesize linterPath = _linterPath;
-@synthesize linterArguments = _linterArguments;
-
 - (id)initWithPlugInController:(CodaPlugInsController*)aController plugInBundle:(NSObject <CodaPlugInBundle> *)plugInBundle
 {
     if ( (self = [super init]) != nil )
@@ -29,24 +26,6 @@
     }
 
     return self;
-}
-
-- (NSString *) name {
-    @throw [NSException exceptionWithName:NSInternalInconsistencyException
-                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
-                                 userInfo:nil];
-}
-
-- (NSArray*)supportedModeIdentifiers {
-    @throw [NSException exceptionWithName:NSInternalInconsistencyException
-                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
-                                 userInfo:nil];
-}
-
-- (NSArray *) parseLintErrors:(NSString *) output {
-    @throw [NSException exceptionWithName:NSInternalInconsistencyException
-                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
-                                 userInfo:nil];
 }
 
 - (NSString *) temporaryFileWithContents:(NSString *)contents {
