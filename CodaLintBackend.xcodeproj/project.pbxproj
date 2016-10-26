@@ -11,9 +11,9 @@
 		A164CDE01DC15B7A00FFA842 /* CodaLintBackendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A164CDDF1DC15B7A00FFA842 /* CodaLintBackendTests.m */; };
 		A164CDE21DC15B7A00FFA842 /* CodaLintBackend.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDD41DC15B7A00FFA842 /* CodaLintBackend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A164CDF31DC15BC700FFA842 /* CodaPluginsController.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEB1DC15BC700FFA842 /* CodaPluginsController.h */; };
-		A164CDF41DC15BC700FFA842 /* LinterPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEC1DC15BC700FFA842 /* LinterPlugin.h */; };
+		A164CDF41DC15BC700FFA842 /* LinterPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEC1DC15BC700FFA842 /* LinterPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A164CDF51DC15BC700FFA842 /* LinterPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A164CDED1DC15BC700FFA842 /* LinterPlugin.m */; };
-		A164CDF61DC15BC700FFA842 /* LintParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEE1DC15BC700FFA842 /* LintParser.h */; };
+		A164CDF61DC15BC700FFA842 /* LintParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEE1DC15BC700FFA842 /* LintParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A164CDF71DC15BC700FFA842 /* Linter.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDEF1DC15BC700FFA842 /* Linter.h */; };
 		A164CDF81DC15BC700FFA842 /* Linter.m in Sources */ = {isa = PBXBuildFile; fileRef = A164CDF01DC15BC700FFA842 /* Linter.m */; };
 		A164CDF91DC15BC700FFA842 /* Runner.h in Headers */ = {isa = PBXBuildFile; fileRef = A164CDF11DC15BC700FFA842 /* Runner.h */; };
@@ -118,9 +118,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A164CDF91DC15BC700FFA842 /* Runner.h in Headers */,
-				A164CDF31DC15BC700FFA842 /* CodaPluginsController.h in Headers */,
-				A164CDF41DC15BC700FFA842 /* LinterPlugin.h in Headers */,
 				A164CDF61DC15BC700FFA842 /* LintParser.h in Headers */,
+				A164CDF41DC15BC700FFA842 /* LinterPlugin.h in Headers */,
+				A164CDF31DC15BC700FFA842 /* CodaPluginsController.h in Headers */,
 				A164CDE21DC15B7A00FFA842 /* CodaLintBackend.h in Headers */,
 				A164CDF71DC15BC700FFA842 /* Linter.h in Headers */,
 			);
@@ -427,6 +427,7 @@
 				A164CDE71DC15B7A00FFA842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A164CDE81DC15B7A00FFA842 /* Build configuration list for PBXNativeTarget "CodaLintBackendTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +436,7 @@
 				A164CDEA1DC15B7A00FFA842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
