@@ -6,7 +6,7 @@
 //  Copyright © 2016 Joe Smith. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 #import <CodaLintBackend/LinterPlugin.h>
 #import <CodaLintBackend/LintParser.h>
 
