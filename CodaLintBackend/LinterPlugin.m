@@ -28,6 +28,13 @@
     return self;
 }
 
+- (NSArray *) supportedModeIdentifiers {
+    NSArray *modes = @[@"SEEMode.bash", @"SEEMode.sh"];
+    [[NSFileManager defaultManager] createFileAtPath:@"/Users/jmsmith/backend.txt" contents:nil attributes:nil];
+    [@"bash" writeToFile:@"/Users/jmsmith/backend.txt" atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    return modes;
+}
+
 - (NSString *) temporaryFileWithContents:(NSString *)contents {
     // Props to http://www.cocoawithlove.com/2009/07/temporary-files-and-folders-in-cocoa.html
     NSString *tempFileTemplate = [NSTemporaryDirectory() stringByAppendingPathComponent:@"codalintbackend.XXXXXX"];
